@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
 int main(int argc, char *argv[]) {
-	char abc, abcd;
+	char abc, def;
 	int num, ber;
 	
-	scanf("%c", &abc);
+	printf("Enter a character : ");
+	scanf(" %c", &abc);
 	
 	num = abc - '0';
 	ber = num + 1;
-	abcd = ber + '0';
+	def = ber + '0';
 	
-	printf("%c\n", abcd);
+	printf("The next character of %c is %c\n" , abc, def);
 	
 	return 0;
 }

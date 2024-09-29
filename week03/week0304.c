@@ -1,17 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
 	
-	int giveme;
-	float okay;
+	int giveme, div;
+	float okay, ans, fin;
 	
-	printf("enter : ");
+	printf("Enter the first number : ");
 	scanf("%d", &giveme);
 	
-	okay = (float)giveme;
+	printf("Enter the second number : ");
+	scanf("%d", &div);
 	
-	printf("%f\n", okay);
+	okay = (float)giveme;
+	ans = (float)div;
+	
+	fin = okay / ans;
+	
+	printf("%f / %f = %f\n", okay, ans, fin);
 	
 	return 0;
 }
